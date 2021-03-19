@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>org.zeith.webhook.fire.pi</title>
+    <link rel="stylesheet" href="sdpi.css">
+    <script src="main_pi.js"></script>
+</head>
+
+<body>
+<div class="sdpi-wrapper hidden">
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Webhook URL</div>
+        <input class="sdpi-item-value" id="webhookurl" value="" onchange="updateInfo()" placeholder="Enter your webhook URL">
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Webhook Body</div>
+        <input class="sdpi-item-value" id="webhookbody" value="" onchange="updateInfo()" placeholder="Enter text to be sent to webook">
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Content-Type</div>
+        <input class="sdpi-item-value" id="webhookcontenttype" value="" onchange="updateInfo()" placeholder="Enter content-type header">
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Method</div>
+        <input class="sdpi-item-value" id="webhookmethod" value="" onchange="updateInfo()" placeholder="Enter method, eg. POST">
+    </div>
+    <div class="sdpi-item">
+        <button class="sdpi-item-value" onclick="testWebhook()">Test Webhook</button>
+        <button class="sdpi-item-value" onclick="openPage('github.com/zeitheron/streamdeck-webhook')">GitHub</button>
+    </div>
+</div>
+</body>
+
+</html>

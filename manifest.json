@@ -1,0 +1,41 @@
+{
+    "Actions": [
+      {
+        "Icon": "resources/actionIcon", 
+        "Name": "Webhook", 
+        "States": [
+          {
+            "Image": "resources/actionDefaultImage",
+            "TitleAlignment": "bottom",
+            "FontSize": "10"
+          }
+        ], 
+        "SupportedInMultiActions": true,
+        "Tooltip": "If Stream Deck button pressed, then...", 
+        "UUID": "org.zeith.webhook.fire"
+      }
+    ], 
+    "SDKVersion": 2,
+    "Author": "Zeitheron", 
+    "CodePath": "plugin/main.html", 
+    "Description": "Fire HTTP webhook with custom metadata", 
+    "Name": "Webhook", 
+    "Icon": "resources/pluginIcon", 
+    "PropertyInspectorPath": "pi/main_pi.html",
+    "URL": "https://zeith.org", 
+    "Version": "2.0",
+    "OS": [
+      {
+          "Platform": "mac", 
+          "MinimumVersion" : "10.11"
+      },
+      {
+          "Platform": "windows", 
+          "MinimumVersion" : "10"
+      }
+    ],
+    "Software": 
+      {
+          "MinimumVersion" : "4.1"
+      }
+  }
